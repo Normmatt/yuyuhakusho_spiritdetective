@@ -95958,8 +95958,9 @@ _0802F88E:
 	orrs r3, r2
 	strb r3, [r1]
 	bx lr
-	.align 2, 0
-_0802F898:
+
+	thumb_func_start ply_fine
+ply_fine:
 	push {r4, r5, lr}
 	adds r5, r1, #0
 	ldr r4, [r5, #0x20]
@@ -96032,8 +96033,9 @@ sub_802F8FE: @ 0x0802F8FE
 	str r3, [r1, #0x40]
 	ldrb r3, [r2]
 	b _0802F8E2
-	.align 2, 0
-_0802F908:
+
+	thumb_func_start ply_goto
+ply_goto:
 	push {lr}
 _0802F90A:
 	ldr r2, [r1, #0x40]
@@ -96064,9 +96066,9 @@ ply_patt: @ 0x0802F928
 	ldrb r2, [r1, #2]
 	adds r2, #1
 	strb r2, [r1, #2]
-	b _0802F908
+	b ply_goto
 _0802F940:
-	b _0802F898
+	b ply_fine
 	.align 2, 0
 
 	thumb_func_start ply_pend
