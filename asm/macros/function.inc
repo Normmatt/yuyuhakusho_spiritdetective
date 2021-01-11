@@ -27,3 +27,12 @@
 	.macro thumb_func_end name
 	.size \name, .-\name
 	.endm
+
+	.macro mov32 reg, addr
+	.if addr == 0x08800000
+		movs \reg, #0x88
+		lsls \reg, \reg, #0x14
+	.else
+		ldr \reg, =#\addr
+	.endif
+	.endm

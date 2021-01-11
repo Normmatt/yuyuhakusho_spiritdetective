@@ -1,3 +1,8 @@
+. = 0x00000000; gUnknown_03000000 = .;
+. = 0x00000280; gUnknown_03000280 = .;
+. = 0x00000640; gUnknown_03000640 = .;
+. = 0x00000820; gUnknown_03000820 = .;
+. = 0x00000BE0; gUnknown_03000BE0 = .;
 . = 0x00000E10; timer_No = .;
 . = 0x00000E12; timer_Count = .;
 . = 0x00000E14; timeoutFlag = .;
@@ -134,8 +139,12 @@
 . = 0x000070C0; m4a_cgbchn = .;
 . = 0x000071C0; SoundMainRAM_Buffer = .;
 . = 0x000071C1; gUnknown_030071C1 = .;
+. = 0x000075C0; gUnknown_030075C0 = .;
+. = 0x00007600; gUnknown_03007600 = .;
+. = 0x00007640; gUnknown_03007640 = .;
+. = 0x00007680; gUnknown_03007680 = .;
 . = 0x000076C0; m4a_memacc_area = .;
-. = 0x000076D0; MusicPlayer3Info = .;
+. = 0x000076D0; gUnknown_030076D0 = .;
 . = 0x00007710; eeprom = .;
 . = 0x00007EA0; gUnknown_03007EA0 = .;
 . = 0x00007F00; gUnknown_03007F00 = .;

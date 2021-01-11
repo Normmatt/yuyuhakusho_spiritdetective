@@ -29,7 +29,11 @@ SECTIONS
 	ALIGN(4)
     {
         data/data.o(.data);
+        sound/sound.o(.data);
+        data/data2.o(.data);
     } = 0
+    
+    ROM_END = .;
     
     /* DWARF debug sections.
        Symbols in the DWARF debugging sections are relative to the beginning
