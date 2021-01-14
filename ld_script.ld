@@ -30,6 +30,7 @@ SECTIONS
     {
         data/data.o(.data);
         sound/sound.o(.data);
+        data/data1.o(.data);
         data/data2.o(.data);
     } = 0
     
